@@ -1,0 +1,181 @@
+.App {
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  /* background-color: #FFEEF8; */
+}
+.App-container{
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  /* background-color: #FFEEF8; */
+}
+.App-container-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.App-container-image{
+  width: 600px;
+  /* width: 40vw; */
+  height: auto;
+}
+
+.App-container-slogan-text{
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: xx-large;
+}
+
+.Login p{
+  margin: 40px;
+  font-size: xx-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.login-form-container{
+  width: auto;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.navbar{
+  width: 100%;
+  background-color: #7383a4;
+  margin: 0;
+}
+
+.navbar-logo-img{
+  margin-left: 30px;
+  width: auto;
+  height: 60px;
+}
+.navbar-logo{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.navbar-container {
+  height: 50px;
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.app-container-button button{
+  margin-top: 50px;
+  width: 200px;
+  height: 70px;
+  font-size:larger;
+}
+
+.admin-container{
+  width: 90%;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.custom-font-size {
+  font-size: 11px;
+}
+
+.editForm-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center
+}
+
+.form__label {
+  height: 30px;
+  font-weight: 300;
+  color: rgb(144, 0, 255);
+  font-size: medium;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.form__input {
+  height: 30px;
+  width: 65%;
+  margin-bottom: 10px;
+  background-color: #f7f5f8;
+  font-size: medium;
+}
+
+.footer{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* .editUserForm{
+  z-index: 100;
+  width: 400px;
+  height: auto;
+  background-color: black;
+} */
+
+#card-body-edit-form-button{
+  width: 19%;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.navbar-nav{
+  margin-right: 5%;
+  width: 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navbar-nav-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar-nav-container a{
+  color: #61dafb;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
