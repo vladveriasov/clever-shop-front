@@ -310,9 +310,9 @@ const EditUserForm = (props) => {
                     </label>
                     <input
                         className="form__input"
-                        type="boolean"
-                        value={userInterfaceLanguage}
-                        onChange={(e) => setUserInterfaceLanguage(e.target.value)}
+                        type="checkbox"
+                        checked={userInterfaceLanguage}
+                        onChange={(e) => setUserInterfaceLanguage(e.target.checked)}
                         id="userInterfaceLanguage"
                         placeholder="Interface Language"
                     />
@@ -323,9 +323,9 @@ const EditUserForm = (props) => {
                     </label>
                     <input
                         className="form__input"
-                        type="boolean"
+                        type="checkbox"
                         value={userNotification}
-                        onChange={(e) => setUserNotification(e.target.value)}
+                        onChange={(e) => setUserNotification(e.target.checked)}
                         id="userNotification"
                         placeholder="Notification"
                     />

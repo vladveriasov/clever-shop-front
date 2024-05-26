@@ -81,6 +81,20 @@
   margin-top: 50px;
   margin-right: auto;
   margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-container-button{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.admin-container-entity{
+  margin-bottom: 70px;
 }
 
 .custom-font-size {
