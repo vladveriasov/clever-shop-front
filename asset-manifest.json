@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/clever-shop-front/static/css/main.7cd96e38.css",
+    "main.js": "/clever-shop-front/static/js/main.7208db85.js",
+    "static/js/453.b63074af.chunk.js": "/clever-shop-front/static/js/453.b63074af.chunk.js",
+    "index.html": "/clever-shop-front/index.html",
+    "main.7cd96e38.css.map": "/clever-shop-front/static/css/main.7cd96e38.css.map",
+    "main.7208db85.js.map": "/clever-shop-front/static/js/main.7208db85.js.map",
+    "453.b63074af.chunk.js.map": "/clever-shop-front/static/js/453.b63074af.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7cd96e38.css",
+    "static/js/main.7208db85.js"
+  ]
+}
