@@ -15,6 +15,8 @@ const UserRow = (props) => {
         // ...other logic here
     }
 
+    const localCurrentRole = window.localStorage.getItem("Role")
+
     const editShowEditForm = () => {
         setShowEditForm(!showEditForm);
     }
@@ -24,12 +26,12 @@ const UserRow = (props) => {
             // const result = await axios(`http://localhost:3000/employer/${props.employerID}`, { method: "DELETE" });
             const result = await axios(`http://localhost:3000/user/${props.userId}`, { method: "DELETE" });
             // window.localStorage.clear();
-          };
-          try {
+        };
+        try {
             dataFetch();
-          } catch (exeption) {
+        } catch (exeption) {
             console.log("exeption:", exeption);
-          }
+        }
     }
 
     return (
@@ -49,7 +51,9 @@ const UserRow = (props) => {
                     <button onClick={editShowEditForm} type="button" className="btn btn-warning" >Edit</button>
                 </td>
                 <td>
-                    <button type="button" className="btn btn-danger" onClick={DeleteUser}>Delete</button>
+                    {localCurrentRole === "ADMIN" && (
+                        <button type="button" className="btn btn-danger" onClick={DeleteUser}>Delete</button>
+                    )}
                 </td>
 
             </tr>

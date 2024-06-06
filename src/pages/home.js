@@ -10,21 +10,23 @@ const Home = () => {
     const localCurrentUserId = window.localStorage.getItem("userId")
     const localCurrentRole = window.localStorage.getItem("role")
 
-    //   useEffect(() => {
-    //     const dataFetch = async () => {
-    //       const result = await axios("http://localhost:3000/resume");
-    //       setCardsResumes(result.data);
-    //     };
-    //     try {
-    //       dataFetch();
-    //     } catch (exeption) {
-    //       // console.log("exeption:", exeption);
-    //     }
-    //     // dataFetch();
-    //   }, []);
+    const handleDownload = async () => {
+        try {
+            const response = await axios.get('http://localhost:3000/download/streamable', {
+                responseType: 'blob',
+            });
 
-
-
+            const url = window.URL.createObjectURL(new Blob([response.data]));
+            const link = document.createElement('a');
+            link.href = url;
+            link.setAttribute('download', 'app.zip'); // Название файла для скачивания
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
+        } catch (exception) {
+            console.error("Exception downloading file:", exception);
+        }
+    };
 
     return (
         <div className="Home">
@@ -40,7 +42,7 @@ const Home = () => {
                         <p className="App-container-slogan-text"> This is the best shop app ever made!</p>
                     </div>
                     <div className="app-container-button">
-                        <button className="btn btn-dark" type="button">Download App</button>
+                          <button className="btn btn-dark" type="button" onClick={handleDownload}>Download App</button>
                     </div>
                 </div>
             </div>

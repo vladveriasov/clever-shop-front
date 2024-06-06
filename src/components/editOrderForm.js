@@ -8,7 +8,7 @@ const EditOrderForm = (props) => {
     const [receiver, setReceiver] = useState(props.receiver);
     const [receiverPhone, setReceiverPhone] = useState(props.receiverPhone);
     const [paymentMethod, setPaymentMethod] = useState(props.paymentMethod);
-    const [delivery, setDelivery] = useState(props.delivery);
+    // const [delivery, setDelivery] = useState(props.delivery);
 
     const editOrder = () => {
         const data = {
@@ -17,7 +17,7 @@ const EditOrderForm = (props) => {
             receiver,
             receiverPhone,
             paymentMethod,
-            delivery
+            // delivery
         };
         const dataFetch = async () => {
             await axios.put(`http://localhost:3000/order/${props.orderId}`, data);
@@ -97,7 +97,7 @@ const EditOrderForm = (props) => {
                         placeholder="Payment Method"
                     />
                 </div>
-                <div className="editForm-container">
+                {/* <div className="editForm-container">
                     <label className="form__label" htmlFor="delivery">
                         Delivery
                     </label>
@@ -109,7 +109,7 @@ const EditOrderForm = (props) => {
                         id="delivery"
                         placeholder="Delivery"
                     />
-                </div>
+                </div> */}
                 <div className="footer">
                     <button type="button" className="btn btn-secondary" onClick={props.onClose}>Close</button>
                     <button onClick={editOrder} type="submit" className="btn btn-primary">

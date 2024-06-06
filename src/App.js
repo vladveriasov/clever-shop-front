@@ -7,6 +7,7 @@ import Home from "./pages/home";
 import Admin from "./pages/admin";
 import NoMatch from "./components/noMatch";
 import NavBar from "./components/navbar";
+import Moderator from "./pages/moderator";
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="*" element={<NoMatch />} />
-
+            <Route path="/moderator" element={<Moderator />} />
           </Routes>
         </div>
       </div>

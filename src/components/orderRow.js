@@ -6,7 +6,7 @@ import axios from "axios";
 
 const OrderRow = (props) => {
     const [showEditForm, setShowEditForm] = useState(false)
-
+    const localCurrentRole = window.localStorage.getItem("Role")
     const handleRow = () => {
         // setCard(card)
         // setShowCardView(true)
@@ -25,12 +25,12 @@ const OrderRow = (props) => {
             // const result = await axios(`http://localhost:3000/employer/${props.employerID}`, { method: "DELETE" });
             const result = await axios(`http://localhost:3000/order/${props.orderId}`, { method: "DELETE" });
             // window.localStorage.clear();
-          };
-          try {
+        };
+        try {
             dataFetch();
-          } catch (exeption) {
+        } catch (exeption) {
             console.log("exeption:", exeption);
-          }
+        }
     }
 
     return (
@@ -42,12 +42,15 @@ const OrderRow = (props) => {
                 <td>{props.receiver}</td>
                 <td>{props.receiverPhone}</td>
                 <td>{props.paymentMethod}</td>
-                <td>{props.delivery}</td>
+                {/* <td>{props.delivery}</td> */}
                 <td>
                     <button onClick={editShowEditForm} type="button" className="btn btn-warning" >Edit</button>
                 </td>
                 <td>
-                    <button type="button" className="btn btn-danger" onClick={DeleteOrder}>Delete</button>
+                    {localCurrentRole === "ADMIN" && (
+                        <button type="button" className="btn btn-danger" onClick={DeleteOrder}>Delete</button>
+                    )}
+
                 </td>
 
             </tr>
