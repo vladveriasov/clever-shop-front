@@ -25,7 +25,7 @@ const AddUserForm = ({ onClose }) => {
             userPhoto
         };
         const dataFetch = async () => {
-            await axios.post("http://localhost:3000/user", data);
+            await axios.post("https://precious-swan-f7f388.netlify.app/user", data);
         };
         try {
             if(data.userEmail === ""){

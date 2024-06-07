@@ -20,7 +20,7 @@
 //         };
 
 //         try {
-//             const result = await axios.get(`http://localhost:3000/delivery/${props.deliveryId}`, updatedDelivery);
+//             const result = await axios.get(`https://precious-swan-f7f388.netlify.app/delivery/${props.deliveryId}`, updatedDelivery);
 //             // Handle successful update (e.g., close the modal, refresh the data)
 //         } catch (exception) {
 //             console.log("exception:", exception);
@@ -91,7 +91,7 @@ const EditDeliveryForm = (props) => {
         };
 
         try {
-            await axios.put(`http://localhost:3000/delivery/${props.deliveryId}`, updatedDelivery);
+            await axios.put(`https://precious-swan-f7f388.netlify.app/delivery/${props.deliveryId}`, updatedDelivery);
             // Handle successful update (e.g., close the modal, refresh the data)
         } catch (exception) {
             console.log("exception:", exception);

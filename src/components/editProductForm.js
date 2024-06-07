@@ -19,7 +19,7 @@ const EditProductForm = (props) => {
         };
 
         try {
-            await axios.put(`http://localhost:3000/product/${props.productId}`, updatedProduct);
+            await axios.put(`https://precious-swan-f7f388.netlify.app/product/${props.productId}`, updatedProduct);
             // Handle successful update (e.g., close the modal, refresh the data)
         } catch (exception) {
             console.log("exception:", exception);

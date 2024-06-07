@@ -14,8 +14,8 @@ const UserRow = (props) => {
 
     const DeleteUser = () => {
         const dataFetch = async () => {
-            // const result = await axios(`http://localhost:3000/employer/${props.employerID}`, { method: "DELETE" });
-            const result = await axios(`http://localhost:3000/user/${props.userId}`, { method: "DELETE" });
+            // const result = await axios(`https://precious-swan-f7f388.netlify.app/employer/${props.employerID}`, { method: "DELETE" });
+            const result = await axios(`https://precious-swan-f7f388.netlify.app/user/${props.userId}`, { method: "DELETE" });
             // window.localStorage.clear();
             console.log(result)
         };

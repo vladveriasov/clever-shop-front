@@ -16,7 +16,7 @@ const EditShopForm = ({ shop, onClose, onEdit }) => {
         };
 
         try {
-            await axios.put(`http://localhost:3000/shop/${shop.shopId}`, data);
+            await axios.put(`https://precious-swan-f7f388.netlify.app/shop/${shop.shopId}`, data);
             onEdit(); // Обновление данных после изменения
             onClose(); // Закрытие формы
         } catch (exception) {

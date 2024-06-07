@@ -16,7 +16,7 @@ const AddShopForm = ({ onClose, onAdd }) => {
         };
 
         try {
-            await axios.post("http://localhost:3000/shop", data);
+            await axios.post("https://precious-swan-f7f388.netlify.app/shop", data);
             onAdd(); // Обновление данных после добавления
             onClose(); // Закрытие формы
         } catch (exception) {

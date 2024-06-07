@@ -12,7 +12,7 @@ const Home = () => {
 
     const handleDownload = async () => {
         try {
-            const response = await axios.get('http://localhost:3000/download/streamable', {
+            const response = await axios.get('https://precious-swan-f7f388.netlify.app/download/streamable', {
                 responseType: 'blob',
             });
 

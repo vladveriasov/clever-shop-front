@@ -15,7 +15,7 @@ const AddOrderForm = ({ onClose, onAdd }) => {
             paymentMethod
         };
         const dataFetch = async () => {
-            await axios.post("http://localhost:3000/order", data);
+            await axios.post("https://precious-swan-f7f388.netlify.app/order", data);
         };
         try {
             if (data.userOrderId === "" || data.receiver === "" || data.receiverPhone === "") {

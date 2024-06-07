@@ -17,7 +17,8 @@ const AddDeliveryForm = ({ onClose }) => {
             deliveryOrderId
         };
         const dataFetch = async () => {
-            await axios.post("http://localhost:3000/delivery", data);
+            await axios.post("https://precious-swan-f7f388.netlify.app/delivery", data);
+            // await axios.post("https://precious-swan-f7f388.netlify.app/product", data);
         };
         try {
             if (data.deliveryOrderId === "") {

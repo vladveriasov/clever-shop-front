@@ -26,7 +26,7 @@ const Admin = () => {
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const result = await axios.get("http://localhost:3000/user");
+                const result = await axios.get("https://precious-swan-f7f388.netlify.app/user");
                 setUsers(result.data);
             } catch (exception) {
                 console.log("Exception fetching users:", exception);
@@ -35,7 +35,7 @@ const Admin = () => {
 
         const fetchOrders = async () => {
             try {
-                const result = await axios.get("http://localhost:3000/order");
+                const result = await axios.get("https://precious-swan-f7f388.netlify.app/order");
                 setOrders(result.data);
             } catch (exception) {
                 console.log("Exception fetching orders:", exception);
@@ -44,7 +44,7 @@ const Admin = () => {
 
         const fetchProducts = async () => {
             try {
-                const result = await axios.get("http://localhost:3000/product");
+                const result = await axios.get("https://precious-swan-f7f388.netlify.app/product");
                 setProducts(result.data);
                 console.log(result.data.productId)
             } catch (exception) {
@@ -54,7 +54,7 @@ const Admin = () => {
 
         // const fetchDeliveries = async () => {
         //     try {
-        //         const result = await axios.get("http://localhost:3000/delivery");
+        //         const result = await axios.get("https://precious-swan-f7f388.netlify.app/delivery");
         //         setDeliveries(result.data);
         //     } catch (exception) {
         //         console.log("Exception fetching users:", exception);

@@ -16,7 +16,7 @@ const ProductRow = (props) => {
 
     const deleteProduct = () => {
         const dataFetch = async () => {
-            const result = await axios(`http://localhost:3000/product/${props.productId}`, { method: "DELETE" });
+            const result = await axios(`https://precious-swan-f7f388.netlify.app/product/${props.productId}`, { method: "DELETE" });
                console.log(result) 
         };
         try {

@@ -11,7 +11,7 @@ const DeliveryRow = (props) => {
 
     const deleteDelivery = async () => {
         try {
-            await axios.delete(`http://localhost:3000/delivery/${props.deliveryId}`);
+            await axios.delete(`https://precious-swan-f7f388.netlify.app/delivery/${props.deliveryId}`);
             // Refresh or update the parent component state
         } catch (exception) {
             console.log("exception:", exception);

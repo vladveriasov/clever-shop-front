@@ -15,7 +15,9 @@ const AddProductForm = ({ onClose }) => {
             subcategoryId
         };
         const dataFetch = async () => {
-            await axios.post("http://localhost:3000/product", data);
+            // await axios.post("https://precious-swan-f7f388.netlify.app/product", data);
+            await axios.post("https://precious-swan-f7f388.netlify.app/product", data);
+            delivery
         };
         try {
             if (data.productName === "") {
