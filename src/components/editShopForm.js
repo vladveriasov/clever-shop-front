@@ -16,7 +16,7 @@ const EditShopForm = ({ shop, onClose, onEdit }) => {
         };
 
         try {
-            await axios.put(`https://precious-swan-f7f388.netlify.app/shop/${shop.shopId}`, data);
+            await axios.put(`https://musefrill-ailon4--111867942298563.stormkit.dev/shop/${shop.shopId}`, data);
             onEdit(); // Обновление данных после изменения
             onClose(); // Закрытие формы
         } catch (exception) {

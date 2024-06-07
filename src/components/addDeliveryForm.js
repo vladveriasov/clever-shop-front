@@ -17,8 +17,8 @@ const AddDeliveryForm = ({ onClose }) => {
             deliveryOrderId
         };
         const dataFetch = async () => {
-            await axios.post("https://precious-swan-f7f388.netlify.app/delivery", data);
-            // await axios.post("https://precious-swan-f7f388.netlify.app/product", data);
+            await axios.post("https://musefrill-ailon4--111867942298563.stormkit.dev/delivery", data);
+            // await axios.post("https://musefrill-ailon4--111867942298563.stormkit.dev/product", data);
         };
         try {
             if (data.deliveryOrderId === "") {

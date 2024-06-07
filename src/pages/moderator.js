@@ -14,7 +14,7 @@ const Moderator = () => {
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const result = await axios.get("https://precious-swan-f7f388.netlify.app/user");
+                const result = await axios.get("https://musefrill-ailon4--111867942298563.stormkit.dev/user");
                 setUsers(result.data);
             } catch (exception) {
                 console.log("Exception fetching users:", exception);
@@ -23,7 +23,7 @@ const Moderator = () => {
 
         const fetchOrders = async () => {
             try {
-                const result = await axios.get("https://precious-swan-f7f388.netlify.app/order");
+                const result = await axios.get("https://musefrill-ailon4--111867942298563.stormkit.dev/order");
                 setOrders(result.data);
             } catch (exception) {
                 console.log("Exception fetching orders:", exception);

@@ -15,9 +15,10 @@ const AddProductForm = ({ onClose }) => {
             subcategoryId
         };
         const dataFetch = async () => {
-            // await axios.post("https://precious-swan-f7f388.netlify.app/product", data);
-            await axios.post("https://precious-swan-f7f388.netlify.app/product", data);
-            delivery
+            // await axios.post("https://musefrill-ailon4--111867942298563.stormkit.dev/product", data);
+            await axios.post("https://musefrill-ailon4--111867942298563.stormkit.dev/product", data);
+            // https://musefrill-ailon4--111867942298563.stormkit.dev/
+            // delivery
         };
         try {
             if (data.productName === "") {

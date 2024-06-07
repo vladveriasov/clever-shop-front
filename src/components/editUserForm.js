@@ -34,7 +34,7 @@
 //             userPhoto
 //         }
 //         const dataFetch = async () => {
-//             const result = await axios(`https://precious-swan-f7f388.netlify.app/user/${props.userEmail}`, { method: "PUT", data: data });
+//             const result = await axios(`https://musefrill-ailon4--111867942298563.stormkit.dev/user/${props.userEmail}`, { method: "PUT", data: data });
 //         };
 //         try {
 //             dataFetch();
@@ -237,8 +237,8 @@ const EditUserForm = (props) => {
             userPhoto
         };
         const dataFetch = async () => {
-            const result = await axios(`https://precious-swan-f7f388.netlify.app/user/${props.userEmail}`, { method: "PUT", data: data });
-            console.log(result) //await axios.put(`https://precious-swan-f7f388.netlify.app/user/${props.userEmail}`, data);
+            const result = await axios(`https://musefrill-ailon4--111867942298563.stormkit.dev/user/${props.userEmail}`, { method: "PUT", data: data });
+            console.log(result) //await axios.put(`https://musefrill-ailon4--111867942298563.stormkit.dev/user/${props.userEmail}`, data);
         };
         try {
             dataFetch();

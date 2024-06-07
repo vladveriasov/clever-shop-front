@@ -15,7 +15,7 @@ const AddOrderForm = ({ onClose, onAdd }) => {
             paymentMethod
         };
         const dataFetch = async () => {
-            await axios.post("https://precious-swan-f7f388.netlify.app/order", data);
+            await axios.post("https://musefrill-ailon4--111867942298563.stormkit.dev/order", data);
         };
         try {
             if (data.userOrderId === "" || data.receiver === "" || data.receiverPhone === "") {

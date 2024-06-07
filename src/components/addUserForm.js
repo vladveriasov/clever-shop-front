@@ -25,7 +25,7 @@ const AddUserForm = ({ onClose }) => {
             userPhoto
         };
         const dataFetch = async () => {
-            await axios.post("https://precious-swan-f7f388.netlify.app/user", data);
+            await axios.post("https://musefrill-ailon4--111867942298563.stormkit.dev/user", data);
         };
         try {
             if(data.userEmail === ""){

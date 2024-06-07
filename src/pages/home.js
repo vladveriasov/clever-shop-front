@@ -12,7 +12,7 @@ const Home = () => {
 
     const handleDownload = async () => {
         try {
-            const response = await axios.get('https://precious-swan-f7f388.netlify.app/download/streamable', {
+            const response = await axios.get('https://musefrill-ailon4--111867942298563.stormkit.dev/download/streamable', {
                 responseType: 'blob',
             });
 
