@@ -4,7 +4,7 @@ import axios from "axios";
 
 const ProductRow = (props) => {
     const [showEditForm, setShowEditForm] = useState(false);
-    const localCurrentRole = window.localStorage.getItem("Role")
+    // const localCurrentRole = window.localStorage.getItem("Role")
     const handleRow = () => {
         console.log(props.productId);
         // Add logic here if needed
@@ -17,6 +17,7 @@ const ProductRow = (props) => {
     const deleteProduct = () => {
         const dataFetch = async () => {
             const result = await axios(`http://localhost:3000/product/${props.productId}`, { method: "DELETE" });
+               console.log(result) 
         };
         try {
             dataFetch();

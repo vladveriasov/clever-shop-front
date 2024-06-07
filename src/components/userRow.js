@@ -1,19 +1,10 @@
-import React, { useState, NavLink } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState} from "react";
+// import { useNavigate } from "react-router-dom";
 import EditUserForm from "./editUserForm";
 import axios from "axios";
 
 const UserRow = (props) => {
     const [showEditForm, setShowEditForm] = useState(false)
-
-    const handleRow = () => {
-        // setCard(card)
-        // setShowCardView(true)
-        console.log(props.userId);
-        // console.log(props.userId);
-        // navigate("/user/" + props.userId)
-        // ...other logic here
-    }
 
     const localCurrentRole = window.localStorage.getItem("Role")
 
@@ -26,6 +17,7 @@ const UserRow = (props) => {
             // const result = await axios(`http://localhost:3000/employer/${props.employerID}`, { method: "DELETE" });
             const result = await axios(`http://localhost:3000/user/${props.userId}`, { method: "DELETE" });
             // window.localStorage.clear();
+            console.log(result)
         };
         try {
             dataFetch();

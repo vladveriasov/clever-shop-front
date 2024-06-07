@@ -28,7 +28,7 @@ const AddUserForm = ({ onClose }) => {
             await axios.post("http://localhost:3000/user", data);
         };
         try {
-            if(data.userEmail == ""){
+            if(data.userEmail === ""){
                 onClose();
                 // console.log("no data")
             }

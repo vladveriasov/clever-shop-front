@@ -96,7 +96,7 @@
 
 // NavBar.js
 import { NavLink } from "react-router-dom";
-import React, { useEffect } from "react";
+// import React, { useEffect } from "react";
 import { useAuth } from './AuthContext';
 
 const NavBar = () => {

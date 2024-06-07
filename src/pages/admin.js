@@ -5,8 +5,8 @@ import OrderRow from "../components/orderRow";
 import AddUserForm from "../components/addUserForm";
 import ProductRow from "../components/productRow";
 import AddProductForm from "../components/addProductForm";
-import AddDeliveryForm from "../components/addDeliveryForm";
-import DeliveryRow from "../components/deliveryRow";
+// import AddDeliveryForm from "../components/addDeliveryForm";
+// import DeliveryRow from "../components/deliveryRow";
 import AddOrderForm from "../components/addOrderForm";
 
 import axios from "axios";
@@ -19,9 +19,9 @@ const Admin = () => {
     const [showRowView, setShowRowView] = useState(false);
     const [addShowForm, setAddShowForm] = useState(false);
     const [showAddProductForm, setShowAddProductForm] = useState(false);
-    const [showAddDeliveryForm, setShowAddDeliveryForm] = useState(false);
+    // const [showAddDeliveryForm, setShowAddDeliveryForm] = useState(false);
     const [showAddOrderForm, setShowAddOrderForm] = useState(false);
-    const [deliveries, setDeliveries] = useState([]);
+    // const [deliveries, setDeliveries] = useState([]);
 
     useEffect(() => {
         const fetchUsers = async () => {
@@ -52,19 +52,19 @@ const Admin = () => {
             }
         };
 
-        const fetchDeliveries = async () => {
-            try {
-                const result = await axios.get("http://localhost:3000/delivery");
-                setDeliveries(result.data);
-            } catch (exception) {
-                console.log("Exception fetching users:", exception);
-            }
-        };
+        // const fetchDeliveries = async () => {
+        //     try {
+        //         const result = await axios.get("http://localhost:3000/delivery");
+        //         setDeliveries(result.data);
+        //     } catch (exception) {
+        //         console.log("Exception fetching users:", exception);
+        //     }
+        // };
 
         fetchUsers();
         fetchOrders();
         fetchProducts();
-        fetchDeliveries();
+        // fetchDeliveries();
     }, []);
 
     const handleRow = (row) => {
@@ -80,9 +80,9 @@ const Admin = () => {
         setShowAddProductForm(!showAddProductForm);
     };
 
-    const toggleAddDeliveryForm = () => {
-        setShowAddDeliveryForm(!showAddDeliveryForm);
-    }
+    // const toggleAddDeliveryForm = () => {
+    //     setShowAddDeliveryForm(!showAddDeliveryForm);
+    // }
 
     const toggleAddOrderForm = () => {
         setShowAddOrderForm(!showAddOrderForm);

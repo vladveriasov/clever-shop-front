@@ -1,6 +1,5 @@
 {
   "name": "clever-shop-front",
-  "homepage": "https://vladveriasov.github.io/clever-shop-front",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -44,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "react-router-dom": "^6.23.1"
   }
 }

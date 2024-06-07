@@ -238,7 +238,7 @@ const EditUserForm = (props) => {
         };
         const dataFetch = async () => {
             const result = await axios(`http://localhost:3000/user/${props.userEmail}`, { method: "PUT", data: data });
-            //await axios.put(`http://localhost:3000/user/${props.userEmail}`, data);
+            console.log(result) //await axios.put(`http://localhost:3000/user/${props.userEmail}`, data);
         };
         try {
             dataFetch();
