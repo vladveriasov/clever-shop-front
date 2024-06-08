@@ -15,7 +15,8 @@ const Home = () => {
             const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/download/streamable`, {
                 responseType: 'blob',
             });
-
+ 
+            
             const url = window.URL.createObjectURL(new Blob([response.data]));
             const link = document.createElement('a');
             link.href = url;
