@@ -14,7 +14,7 @@ const Moderator = () => {
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const result = await axios.get("https://musefrill-ailon4--111867942298563.stormkit.dev/user");
+                const result = await axios.get("https://gainful-judicious-uncle.glitch.me/user");
                 setUsers(result.data);
             } catch (exception) {
                 console.log("Exception fetching users:", exception);
@@ -23,7 +23,7 @@ const Moderator = () => {
 
         const fetchOrders = async () => {
             try {
-                const result = await axios.get("https://musefrill-ailon4--111867942298563.stormkit.dev/order");
+                const result = await axios.get("https://gainful-judicious-uncle.glitch.me/order");
                 setOrders(result.data);
             } catch (exception) {
                 console.log("Exception fetching orders:", exception);

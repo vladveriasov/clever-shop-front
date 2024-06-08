@@ -16,7 +16,7 @@ const AddShopForm = ({ onClose, onAdd }) => {
         };
 
         try {
-            await axios.post("https://musefrill-ailon4--111867942298563.stormkit.dev/shop", data);
+            await axios.post("https://gainful-judicious-uncle.glitch.me/shop", data);
             onAdd(); // Обновление данных после добавления
             onClose(); // Закрытие формы
         } catch (exception) {

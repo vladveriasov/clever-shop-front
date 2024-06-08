@@ -15,8 +15,8 @@ const OrderRow = (props) => {
 
     const DeleteOrder = () => {
         const dataFetch = async () => {
-            // const result = await axios(`https://musefrill-ailon4--111867942298563.stormkit.dev/employer/${props.employerID}`, { method: "DELETE" });
-            const result = await axios(`https://musefrill-ailon4--111867942298563.stormkit.dev/order/${props.orderId}`, { method: "DELETE" });
+            // const result = await axios(`https://gainful-judicious-uncle.glitch.me/employer/${props.employerID}`, { method: "DELETE" });
+            const result = await axios(`https://gainful-judicious-uncle.glitch.me/order/${props.orderId}`, { method: "DELETE" });
             // window.localStorage.clear();
             console.log(result) 
         };

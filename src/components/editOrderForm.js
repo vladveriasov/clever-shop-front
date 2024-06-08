@@ -20,7 +20,7 @@ const EditOrderForm = (props) => {
             // delivery
         };
         const dataFetch = async () => {
-            await axios.put(`https://musefrill-ailon4--111867942298563.stormkit.dev/order/${props.orderId}`, data);
+            await axios.put(`https://gainful-judicious-uncle.glitch.me/order/${props.orderId}`, data);
         };
         try {
             dataFetch();

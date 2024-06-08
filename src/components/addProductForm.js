@@ -15,9 +15,9 @@ const AddProductForm = ({ onClose }) => {
             subcategoryId
         };
         const dataFetch = async () => {
-            // await axios.post("https://musefrill-ailon4--111867942298563.stormkit.dev/product", data);
-            await axios.post("https://musefrill-ailon4--111867942298563.stormkit.dev/product", data);
-            // https://musefrill-ailon4--111867942298563.stormkit.dev/
+            // await axios.post("https://gainful-judicious-uncle.glitch.me/product", data);
+            await axios.post("https://gainful-judicious-uncle.glitch.me/product", data);
+            // https://gainful-judicious-uncle.glitch.me/
             // delivery
         };
         try {
