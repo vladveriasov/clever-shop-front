@@ -20,7 +20,7 @@
 //         };
 
 //         try {
-//             const result = await axios.get(`https://musefrill-ailon4.stormkit.dev/delivery/${props.deliveryId}`, updatedDelivery);
+//             const result = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/delivery/${props.deliveryId}`, updatedDelivery);
 //             // Handle successful update (e.g., close the modal, refresh the data)
 //         } catch (exception) {
 //             console.log("exception:", exception);
@@ -91,7 +91,7 @@ const EditDeliveryForm = (props) => {
         };
 
         try {
-            await axios.put(`https://musefrill-ailon4.stormkit.dev/delivery/${props.deliveryId}`, updatedDelivery);
+            await axios.put(`${process.env.REACT_APP_BACKEND_URL}/delivery/${props.deliveryId}`, updatedDelivery);
             // Handle successful update (e.g., close the modal, refresh the data)
         } catch (exception) {
             console.log("exception:", exception);

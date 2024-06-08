@@ -11,7 +11,7 @@ const DeliveryRow = (props) => {
 
     const deleteDelivery = async () => {
         try {
-            await axios.delete(`https://musefrill-ailon4.stormkit.dev/delivery/${props.deliveryId}`);
+            await axios.delete(`${process.env.REACT_APP_BACKEND_URL}/delivery/${props.deliveryId}`);
             // Refresh or update the parent component state
         } catch (exception) {
             console.log("exception:", exception);

@@ -16,7 +16,7 @@ const ProductRow = (props) => {
 
     const deleteProduct = () => {
         const dataFetch = async () => {
-            const result = await axios(`https://musefrill-ailon4.stormkit.dev/product/${props.productId}`, { method: "DELETE" });
+            const result = await axios(`${process.env.REACT_APP_BACKEND_URL}/product/${props.productId}`, { method: "DELETE" });
                console.log(result) 
         };
         try {

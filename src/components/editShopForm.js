@@ -16,7 +16,7 @@ const EditShopForm = ({ shop, onClose, onEdit }) => {
         };
 
         try {
-            await axios.put(`https://musefrill-ailon4.stormkit.dev/shop/${shop.shopId}`, data);
+            await axios.put(`${process.env.REACT_APP_BACKEND_URL}/shop/${shop.shopId}`, data);
             onEdit(); // Обновление данных после изменения
             onClose(); // Закрытие формы
         } catch (exception) {

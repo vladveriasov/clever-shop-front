@@ -15,8 +15,8 @@ const AddProductForm = ({ onClose }) => {
             subcategoryId
         };
         const dataFetch = async () => {
-            // await axios.post("https://musefrill-ailon4.stormkit.dev/product", data);
-            await axios.post("https://musefrill-ailon4.stormkit.dev/product", data);
+            // await axios.post(`${process.env.REACT_APP_BACKEND_URL}/product", data);
+            await axios.post(`${process.env.REACT_APP_BACKEND_URL}/product`, data);
             // https://musefrill-ailon4.stormkit.dev/
             // delivery
         };

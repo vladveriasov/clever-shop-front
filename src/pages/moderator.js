@@ -14,7 +14,7 @@ const Moderator = () => {
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const result = await axios.get("https://musefrill-ailon4.stormkit.dev/user");
+                const result = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/user`);
                 setUsers(result.data);
             } catch (exception) {
                 console.log("Exception fetching users:", exception);
@@ -23,7 +23,7 @@ const Moderator = () => {
 
         const fetchOrders = async () => {
             try {
-                const result = await axios.get("https://musefrill-ailon4.stormkit.dev/order");
+                const result = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/order`);
                 setOrders(result.data);
             } catch (exception) {
                 console.log("Exception fetching orders:", exception);

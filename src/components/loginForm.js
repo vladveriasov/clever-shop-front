@@ -14,7 +14,7 @@ function LoginForm() {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const result = await axios.get(`https://musefrill-ailon4.stormkit.dev/user/${userEmail}`);
+            const result = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/user/${userEmail}`);
             if (result.data.userPassword === userPassword) {
                 const user = {
                     id: result.data.userId,

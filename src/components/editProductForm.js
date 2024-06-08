@@ -19,7 +19,7 @@ const EditProductForm = (props) => {
         };
 
         try {
-            await axios.put(`https://musefrill-ailon4.stormkit.dev/product/${props.productId}`, updatedProduct);
+            await axios.put(`${process.env.REACT_APP_BACKEND_URL}/product/${props.productId}`, updatedProduct);
             // Handle successful update (e.g., close the modal, refresh the data)
         } catch (exception) {
             console.log("exception:", exception);

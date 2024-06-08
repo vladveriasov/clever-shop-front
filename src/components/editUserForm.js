@@ -34,7 +34,7 @@
 //             userPhoto
 //         }
 //         const dataFetch = async () => {
-//             const result = await axios(`https://musefrill-ailon4.stormkit.dev/user/${props.userEmail}`, { method: "PUT", data: data });
+//             const result = await axios(`${process.env.REACT_APP_BACKEND_URL}/user/${props.userEmail}`, { method: "PUT", data: data });
 //         };
 //         try {
 //             dataFetch();
@@ -237,8 +237,8 @@ const EditUserForm = (props) => {
             userPhoto
         };
         const dataFetch = async () => {
-            const result = await axios(`https://musefrill-ailon4.stormkit.dev/user/${props.userEmail}`, { method: "PUT", data: data });
-            console.log(result) //await axios.put(`https://musefrill-ailon4.stormkit.dev/user/${props.userEmail}`, data);
+            const result = await axios(`${process.env.REACT_APP_BACKEND_URL}/user/${props.userEmail}`, { method: "PUT", data: data });
+            console.log(result) //await axios.put(`${process.env.REACT_APP_BACKEND_URL}/user/${props.userEmail}`, data);
         };
         try {
             dataFetch();

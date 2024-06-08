@@ -15,7 +15,7 @@ const AddOrderForm = ({ onClose, onAdd }) => {
             paymentMethod
         };
         const dataFetch = async () => {
-            await axios.post("https://musefrill-ailon4.stormkit.dev/order", data);
+            await axios.post(`${process.env.REACT_APP_BACKEND_URL}/order`, data);
         };
         try {
             if (data.userOrderId === "" || data.receiver === "" || data.receiverPhone === "") {

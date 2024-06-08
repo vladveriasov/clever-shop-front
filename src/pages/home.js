@@ -12,7 +12,7 @@ const Home = () => {
 
     const handleDownload = async () => {
         try {
-            const response = await axios.get('https://musefrill-ailon4.stormkit.dev/download/streamable', {
+            const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/download/streamable`, {
                 responseType: 'blob',
             });
 

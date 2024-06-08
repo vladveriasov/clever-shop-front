@@ -15,8 +15,8 @@ const OrderRow = (props) => {
 
     const DeleteOrder = () => {
         const dataFetch = async () => {
-            // const result = await axios(`https://musefrill-ailon4.stormkit.dev/employer/${props.employerID}`, { method: "DELETE" });
-            const result = await axios(`https://musefrill-ailon4.stormkit.dev/order/${props.orderId}`, { method: "DELETE" });
+            // const result = await axios(`${process.env.REACT_APP_BACKEND_URL}/employer/${props.employerID}`, { method: "DELETE" });
+            const result = await axios(`${process.env.REACT_APP_BACKEND_URL}/order/${props.orderId}`, { method: "DELETE" });
             // window.localStorage.clear();
             console.log(result) 
         };

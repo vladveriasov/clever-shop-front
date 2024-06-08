@@ -25,7 +25,7 @@ const AddUserForm = ({ onClose }) => {
             userPhoto
         };
         const dataFetch = async () => {
-            await axios.post("https://musefrill-ailon4.stormkit.dev/user", data);
+            await axios.post(`${process.env.REACT_APP_BACKEND_URL}/user`, data);
         };
         try {
             if(data.userEmail === ""){

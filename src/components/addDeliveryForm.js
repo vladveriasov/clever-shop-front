@@ -17,8 +17,7 @@ const AddDeliveryForm = ({ onClose }) => {
             deliveryOrderId
         };
         const dataFetch = async () => {
-            await axios.post("https://musefrill-ailon4.stormkit.dev/delivery", data);
-            // await axios.post("https://musefrill-ailon4.stormkit.dev/product", data);
+            await axios.post(`${process.env.REACT_APP_BACKEND_URL}/delivery`, data);
         };
         try {
             if (data.deliveryOrderId === "") {
