@@ -25,7 +25,7 @@ const AddUserForm = ({ onClose }) => {
             userPhoto
         };
         const dataFetch = async () => {
-            await axios.post("https://gainful-judicious-uncle.glitch.me/user", data);
+            await axios.post("https://musefrill-ailon4.stormkit.dev/user", data);
         };
         try {
             if(data.userEmail === ""){

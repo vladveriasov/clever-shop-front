@@ -14,8 +14,8 @@ const UserRow = (props) => {
 
     const DeleteUser = () => {
         const dataFetch = async () => {
-            // const result = await axios(`https://gainful-judicious-uncle.glitch.me/employer/${props.employerID}`, { method: "DELETE" });
-            const result = await axios(`https://gainful-judicious-uncle.glitch.me/user/${props.userId}`, { method: "DELETE" });
+            // const result = await axios(`https://musefrill-ailon4.stormkit.dev/employer/${props.employerID}`, { method: "DELETE" });
+            const result = await axios(`https://musefrill-ailon4.stormkit.dev/user/${props.userId}`, { method: "DELETE" });
             // window.localStorage.clear();
             console.log(result)
         };

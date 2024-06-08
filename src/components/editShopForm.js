@@ -16,7 +16,7 @@ const EditShopForm = ({ shop, onClose, onEdit }) => {
         };
 
         try {
-            await axios.put(`https://gainful-judicious-uncle.glitch.me/shop/${shop.shopId}`, data);
+            await axios.put(`https://musefrill-ailon4.stormkit.dev/shop/${shop.shopId}`, data);
             onEdit(); // Обновление данных после изменения
             onClose(); // Закрытие формы
         } catch (exception) {

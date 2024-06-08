@@ -15,7 +15,7 @@ const AddOrderForm = ({ onClose, onAdd }) => {
             paymentMethod
         };
         const dataFetch = async () => {
-            await axios.post("https://gainful-judicious-uncle.glitch.me/order", data);
+            await axios.post("https://musefrill-ailon4.stormkit.dev/order", data);
         };
         try {
             if (data.userOrderId === "" || data.receiver === "" || data.receiverPhone === "") {

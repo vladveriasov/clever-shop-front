@@ -26,7 +26,7 @@ const Admin = () => {
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const result = await axios.get("https://gainful-judicious-uncle.glitch.me/user");
+                const result = await axios.get("https://musefrill-ailon4.stormkit.dev/user");
                 setUsers(result.data);
             } catch (exception) {
                 console.log("Exception fetching users:", exception);
@@ -35,7 +35,7 @@ const Admin = () => {
 
         const fetchOrders = async () => {
             try {
-                const result = await axios.get("https://gainful-judicious-uncle.glitch.me/order");
+                const result = await axios.get("https://musefrill-ailon4.stormkit.dev/order");
                 setOrders(result.data);
             } catch (exception) {
                 console.log("Exception fetching orders:", exception);
@@ -44,7 +44,7 @@ const Admin = () => {
 
         const fetchProducts = async () => {
             try {
-                const result = await axios.get("https://gainful-judicious-uncle.glitch.me/product");
+                const result = await axios.get("https://musefrill-ailon4.stormkit.dev/product");
                 setProducts(result.data);
                 console.log(result.data.productId)
             } catch (exception) {
@@ -54,7 +54,7 @@ const Admin = () => {
 
         // const fetchDeliveries = async () => {
         //     try {
-        //         const result = await axios.get("https://gainful-judicious-uncle.glitch.me/delivery");
+        //         const result = await axios.get("https://musefrill-ailon4.stormkit.dev/delivery");
         //         setDeliveries(result.data);
         //     } catch (exception) {
         //         console.log("Exception fetching users:", exception);

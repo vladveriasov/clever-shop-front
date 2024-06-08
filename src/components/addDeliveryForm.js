@@ -17,8 +17,8 @@ const AddDeliveryForm = ({ onClose }) => {
             deliveryOrderId
         };
         const dataFetch = async () => {
-            await axios.post("https://gainful-judicious-uncle.glitch.me/delivery", data);
-            // await axios.post("https://gainful-judicious-uncle.glitch.me/product", data);
+            await axios.post("https://musefrill-ailon4.stormkit.dev/delivery", data);
+            // await axios.post("https://musefrill-ailon4.stormkit.dev/product", data);
         };
         try {
             if (data.deliveryOrderId === "") {

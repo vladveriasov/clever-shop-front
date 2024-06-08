@@ -12,7 +12,7 @@ const Home = () => {
 
     const handleDownload = async () => {
         try {
-            const response = await axios.get('https://gainful-judicious-uncle.glitch.me/download/streamable', {
+            const response = await axios.get('https://musefrill-ailon4.stormkit.dev/download/streamable', {
                 responseType: 'blob',
             });
 
